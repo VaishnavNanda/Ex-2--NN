@@ -76,7 +76,8 @@ class Perceptron:
         return np.dot(x, self._w) + self._b
     def predict(self, x: np.array):
         return np.where(self.f(x) >= 0,1,-1)
-
+```
+```
 df = pd.read_csv("/content/iris (1).csv")
 print(df.head())
 # extract the label column
